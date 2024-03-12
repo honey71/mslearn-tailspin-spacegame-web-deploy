@@ -1,3 +1,21 @@
+parameters:
+  - name: app_name
+    displayName: Mendix app name
+    type: string
+  - name: debugger_action
+    displayName: Enable / Disable
+    type: string
+    values:
+      - enable
+      - disable
+  - name: environment
+    type: string
+    default: dt
+    values:
+      - dt
+      - acc
+      - prd
+      
 trigger:
   - '*'
   
